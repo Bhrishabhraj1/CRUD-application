@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A complete CRUD task management application built with HTML, CSS, and JavaScript">
+    <meta name="keywords" content="CRUD, Task Manager, JavaScript, HTML, CSS, Web Application">
+    <meta name="author" content="Your Name">
+    <title>Advanced Task Manager - CRUD Application</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <div class="header-content">
+            <h1>Advanced Task Manager</h1>
+            <p class="tagline">Your complete task management solution</p>
+        </div>
+    </header>
+
+    <main class="container" role="main">
+        <section class="app-section" aria-labelledby="task-input-heading">
+            <h2 id="task-input-heading" class="section-heading">Add New Task</h2>
+            <div class="form-container">
+                <label for="taskInput" class="sr-only">Enter a new task</label>
+                <input type="text" id="taskInput" placeholder="Enter a new task..." aria-label="Task input field" class="task-input-field">
+                <button id="addBtn" class="primary-button" aria-label="Add task">
+                    <span class="button-icon">+</span>
+                    <span class="button-text">Add Task</span>
+                </button>
+            </div>
+        </section>
+
+        <section class="app-section" aria-labelledby="task-filter-heading">
+            <h2 id="task-filter-heading" class="section-heading">Filter Tasks</h2>
+            <div class="filter-container">
+                <label for="searchInput" class="sr-only">Search tasks</label>
+                <input type="text" id="searchInput" placeholder="Search tasks..." aria-label="Task search field" class="search-input-field">
+            </div>
+        </section>
+
+        <section class="app-section" aria-labelledby="task-list-heading">
+            <h2 id="task-list-heading" class="section-heading">Your Tasks</h2>
+            <div class="task-list-container">
+                <ul id="taskList" class="task-list" aria-live="polite"></ul>
+                <div id="emptyState" class="empty-state" hidden>
+                    <img src="empty-state.svg" alt="" class="empty-state-image">
+                    <p class="empty-state-text">No tasks found. Add your first task above!</p>
+                </div>
+            </div>
+        </section>
+
+        <footer class="app-footer" role="contentinfo">
+            <div class="footer-content">
+                <p class="footer-text">© 2023 Task Manager App. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#" class="footer-link">Privacy Policy</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#" class="footer-link">Terms of Service</a>
+                    <span class="footer-separator">|</span>
+                    <a href="#" class="footer-link">Contact Us</a>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <div id="editModal" class="modal" hidden aria-hidden="true">
+        <div class="modal-content">
+            <h3 class="modal-heading">Edit Task</h3>
+            <label for="editTaskInput" class="modal-label">Task Text:</label>
+            <input type="text" id="editTaskInput" class="modal-input">
+            <div class="modal-actions">
+                <button id="cancelEditBtn" class="secondary-button">Cancel</button>
+                <button id="saveEditBtn" class="primary-button">Save Changes</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <!-- Additional scripts could be loaded here -->
+</body>
+</html>
