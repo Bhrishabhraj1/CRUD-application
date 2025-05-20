@@ -1,7 +1,8 @@
-Task Manager - CRUD Application
+Task Manager - CRUD Application💫
 CRUD App Screenshot 
 ![Screenshot (1)](https://github.com/user-attachments/assets/ca5532a6-2800-4d5e-b44d-9c32029466f0)
-![Uploading Screenshots - File Explorer 20-05-2025 22_04_31.png…]()
+![Screenshots - File Explorer 20-05-2025 22_04_31](https://github.com/user-attachments/assets/8181f995-0c36-4578-8133-f4814930d5b5)
+
 
 
 Overview
