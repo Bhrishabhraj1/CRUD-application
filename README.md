@@ -1,6 +1,8 @@
 Task Manager - CRUD Application
 CRUD App Screenshot 
 ![Screenshot (1)](https://github.com/user-attachments/assets/ca5532a6-2800-4d5e-b44d-9c32029466f0)
+![Uploading Screenshots - File Explorer 20-05-2025 22_04_31.png…]()
+
 
 Overview
 A simple yet functional Task Manager application built with HTML, CSS, and JavaScript that demonstrates CRUD (Create, Read, Update, Delete) operations. This web app allows users to manage their tasks with full persistence using the browser's localStorage.
